@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nizhgo-cats/static/css/main.d3945539.css",
+    "main.js": "/nizhgo-cats/static/js/main.d3e30e9d.js",
+    "static/js/787.0d8361e4.chunk.js": "/nizhgo-cats/static/js/787.0d8361e4.chunk.js",
+    "index.html": "/nizhgo-cats/index.html",
+    "main.d3945539.css.map": "/nizhgo-cats/static/css/main.d3945539.css.map",
+    "main.d3e30e9d.js.map": "/nizhgo-cats/static/js/main.d3e30e9d.js.map",
+    "787.0d8361e4.chunk.js.map": "/nizhgo-cats/static/js/787.0d8361e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3945539.css",
+    "static/js/main.d3e30e9d.js"
+  ]
+}

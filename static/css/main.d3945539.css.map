@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.d3945539.css","mappings":"8EAGA,KAEE,wBAAyB,CACzB,gCACF","sources":["index.css"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');\r\n\r\n\r\nbody\r\n{\r\n  background-color: #4D5760;\r\n  font-family: 'Space Mono', monospace;\r\n}"],"names":[],"sourceRoot":""}
