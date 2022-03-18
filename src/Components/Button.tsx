@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 const Button  = styled.button`{
+  font-family: 'Space Mono', monospace;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 8px 33px 8px;
-  border: 1px solid whitesmoke;
+  padding: 4px;
+  border: 1px solid ${props => props.color};
   border-radius: 5px;
   cursor: pointer;
   background-color: Transparent;
-  color: whitesmoke;
-  margin-bottom: 20px;
+  color: ${props => props.color};
   
 
   :active {
