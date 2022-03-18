@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/nizhgo-cats/static/css/main.d3945539.css",
-    "main.js": "/nizhgo-cats/static/js/main.d3e30e9d.js",
+    "main.css": "/nizhgo-cats/static/css/main.301c968d.css",
+    "main.js": "/nizhgo-cats/static/js/main.cbdc836c.js",
     "static/js/787.0d8361e4.chunk.js": "/nizhgo-cats/static/js/787.0d8361e4.chunk.js",
+    "static/media/Loader.gif": "/nizhgo-cats/static/media/Loader.b683deb3aa4a61971356.gif",
+    "static/media/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.png": "/nizhgo-cats/static/media/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.2ff254013ba83667659f.png",
+    "static/media/NizhgoCatsLogo.svg": "/nizhgo-cats/static/media/NizhgoCatsLogo.6b4f084de8e161fa55677487761f0dfa.svg",
     "index.html": "/nizhgo-cats/index.html",
-    "main.d3945539.css.map": "/nizhgo-cats/static/css/main.d3945539.css.map",
-    "main.d3e30e9d.js.map": "/nizhgo-cats/static/js/main.d3e30e9d.js.map",
+    "main.301c968d.css.map": "/nizhgo-cats/static/css/main.301c968d.css.map",
+    "main.cbdc836c.js.map": "/nizhgo-cats/static/js/main.cbdc836c.js.map",
     "787.0d8361e4.chunk.js.map": "/nizhgo-cats/static/js/787.0d8361e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3945539.css",
-    "static/js/main.d3e30e9d.js"
+    "static/css/main.301c968d.css",
+    "static/js/main.cbdc836c.js"
   ]
 }
