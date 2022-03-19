@@ -23,7 +23,9 @@ function RandomCats()
                     <Button onClick={() => catImg()} color={'#F6F6F6'}>🎀 Next! 🎀</Button>
                     <Button onClick={() => catImg()} color={'#F2E362'}><Icon src={CatBtn} alt={'Meow!'} height={'20px'} width={'20px'}/></Button>
                 </ButtonRow>
-                <CatImg src={imgUrl}/>
+                <ImgContainer>
+                    <CatImg src={imgUrl} alt={'catImg'}/>
+                </ImgContainer>
             </CatsGenerator>
         </CatGeneratorContainer>
     )
@@ -36,6 +38,7 @@ const CatGeneratorContainer = styled.div`{
   text-align: center;
   color: white;
   letter-spacing: 1px;
+  flex-shrink: 0;
   
 }`;
 
@@ -45,10 +48,16 @@ const Icon = styled.img`
 `
 
 const  CatImg = styled.img`{
-  height: 50vh;
-  image-rendering: optimizeQuality;
-
+  image-rendering: high-quality;
+  max-width: 100%;
+  max-height: 100%;
 }`;
+
+const ImgContainer = styled.div`
+  height: 55vh;
+  object-fit: scale-down;
+  
+`
 
 const ButtonRow = styled.div`
   display: flex;
@@ -63,6 +72,7 @@ const CatsGenerator = styled.div`
   flex: 0 0 100%;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
   
   @media(max-width: 1024px){
     flex-direction: column-reverse;

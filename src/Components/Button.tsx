@@ -5,7 +5,7 @@ const Button  = styled.button`{
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  padding: 4px;
+  padding: 5px;
   border: 1px solid ${props => props.color};
   border-radius: 5px;
   cursor: pointer;
