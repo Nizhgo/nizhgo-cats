@@ -27,7 +27,7 @@ const LikedCats = () =>
     return(
         <BodyContainer>
             <h1>Liked cats</h1>
-
+            <div style={{height:'20px'}}/>
             {likedCats.map((liked_cat_data) => {
                 return (<ImgContainer>
                     <Img src={liked_cat_data.url}/>
@@ -50,6 +50,8 @@ const ImgContainer = styled.div`
   justify-content: center;
   width: 40vw;
   object-fit: scale-down;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   @media(max-width: 512px)
   {
