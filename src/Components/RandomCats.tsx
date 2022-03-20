@@ -22,10 +22,10 @@ function RandomCats()
             <CatsGenerator>
                 <ButtonRow>
                     <Button onClick={() => catImg()} color={'#F6F6F6'}>🎀 Next! 🎀</Button>
-                    <Button onClick={() => catImg()} color={'#F2E362'}><Icon src={CatBtn} alt={'Meow!'} height={'20px'} width={'20px'}/></Button>
+                    <Button onClick={() => catImg()} color={'#F2E362'}><Icon src={CatBtn} alt={'Meow!'} height={'20px'} width={'20px'}/></Button> //
                 </ButtonRow>
                 <ImgContainer>
-                    <CatImg src={imgUrl} alt={'catImg'}/>
+                    <CatImg src={imgUrl}/>
                 </ImgContainer>
             </CatsGenerator>
         </CatGeneratorContainer>
