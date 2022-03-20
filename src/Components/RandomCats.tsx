@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from "react";
 import styled from "styled-components";
-import Button from "./Button";
+import Button from "./UI/Button";
 import CatBtn from '../Images/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.png';
 import Loader from  '../Images/Loader.gif'
-import {firebaseAnalytics} from "../utils/firebaseConfig";
+import {firebaseAnalytics, firebaseDatabase} from "../utils/firebaseConfig";
+import BodyContainer from "./UI/BodyContainer";
 
 
 const RandomCats = () =>
@@ -23,6 +24,11 @@ const RandomCats = () =>
     const LikeACat = () =>
     {
         firebaseAnalytics.logEvent("like_cat_button");
+        const liked_cat = {
+            url: catImgUrl,
+            date: Date.now(),
+        }
+        firebaseDatabase.ref().child('liked_cat').push(liked_cat);
         GetCatImgUrlFromApi();
     }
 
@@ -33,7 +39,7 @@ const RandomCats = () =>
     }
 
     return(
-        <CatGeneratorContainer>
+        <BodyContainer>
             <h1>Random cats!🐈</h1>
             <CatsGenerator>
                 <ButtonRow>
@@ -44,20 +50,11 @@ const RandomCats = () =>
                     <CatImg src={catImgUrl}/>
                 </ImgContainer>
             </CatsGenerator>
-        </CatGeneratorContainer>
+        </BodyContainer>
     )
 }
 
 export default RandomCats;
-const CatGeneratorContainer = styled.div`
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  letter-spacing: 1px;
-  flex-shrink: 0;
-`;
 
 const Icon = styled.img`
   display: flex;
@@ -73,6 +70,10 @@ const  CatImg = styled.img`
 const ImgContainer = styled.div`
   height: 55vh;
   object-fit: scale-down;
+  @media(max-width: 512px)
+  {
+    height: 45vh;
+  }
 `;
 
 const ButtonRow = styled.div`

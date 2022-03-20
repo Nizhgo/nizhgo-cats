@@ -1,5 +1,6 @@
 import firebase from 'firebase/compat/app';
 import  'firebase/compat/analytics'
+import 'firebase/compat/database'
 
 const firebaseConfig = {
     apiKey: "AIzaSyAcgtV4EKYwkh79vpAdhM1EfsHiuKHG3ic",
@@ -8,9 +9,11 @@ const firebaseConfig = {
     storageBucket: "nizhgo-cats-5ba3f.appspot.com",
     messagingSenderId: "237578029883",
     appId: "1:237578029883:web:e739a0a00203f92a07051e",
+    databaseURL: "https://nizhgo-cats-5ba3f-default-rtdb.europe-west1.firebasedatabase.app",
     measurementId: "G-GF1H79254X"
 };
 
 firebase.initializeApp(firebaseConfig);
 
 export const firebaseAnalytics = firebase.analytics();
+export const firebaseDatabase = firebase.database();

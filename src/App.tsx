@@ -3,13 +3,19 @@ import './App.css';
 import RandomCats from "./Components/RandomCats";
 import styled from "styled-components";
 import Header from "./Components/Header";
-
+import { BrowserRouter, Routes, Route} from "react-router-dom";
+import LikedCats from "./Components/LikedCats";
 function App() {
   return (
-    <PageRoot>
-      <Header/>
-      <RandomCats/>
-    </PageRoot>
+      <BrowserRouter>
+          <PageRoot>
+              <Header/>
+              <Routes>
+                  <Route path="/" element={<RandomCats/>} />
+                  <Route path="/liked-cats" element ={<LikedCats/>} />
+              </Routes>
+          </PageRoot>
+      </BrowserRouter>
   );
 }
 
