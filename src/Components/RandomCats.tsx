@@ -3,13 +3,14 @@ import styled from "styled-components";
 import Button from "./Button";
 import CatBtn from '../Images/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.png';
 import Loader from  '../Images/Loader.gif'
+import {firebaseAnalytics} from "../utils/firebaseConfig";
 
 
 function RandomCats()
 {
     const [imgUrl, setUrl] = useState('');
-
     const catImg = async () => {
+        firebaseAnalytics.logEvent("viewing_a_cat");
         setUrl(Loader);
         await fetch("https://api.thecatapi.com/v1/images/search")
             .then(res => res.json())
