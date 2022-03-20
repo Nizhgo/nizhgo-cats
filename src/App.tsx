@@ -11,8 +11,8 @@ function App() {
           <PageRoot>
               <Header/>
               <Routes>
-                  <Route path="/" element={<RandomCats/>} />
-                  <Route path="/liked-cats" element ={<LikedCats/>} />
+                  <Route path="/nizhgo-cats/" element={<RandomCats/>} />
+                  <Route path="nizhgo-cats/liked-cats" element ={<LikedCats/>} />
               </Routes>
           </PageRoot>
       </BrowserRouter>

@@ -6,18 +6,18 @@ const Header = () =>
 {
     return(
     <HeaderContainer>
-        <Link to={'/'}>
+        <Link to={'/nizhgo-cats/'}>
             <img src={LogoImg} alt={'logo'}/>
         </Link>
         <div style={{width:'128px'}}/>
         <NavScrollContainer>
                 <Menu>
-                    <Link to={'/'}>
+                    <Link to={'/nizhgo-cats/'}>
                         <MenuItem>
-                            <NavOption>Random-cats!!</NavOption>
+                            <NavOption>Random cats!</NavOption>
                         </MenuItem>
                     </Link>
-                    <Link to={'liked-cats/'}>
+                    <Link to={'/nizhgo-cats/liked-cats/'}>
                         <MenuItem>
                             <NavOption>Liked cats</NavOption>
                         </MenuItem>
