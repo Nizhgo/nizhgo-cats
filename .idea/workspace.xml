@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60ca4b8e-d247-4a4d-8afd-f893534f6a43" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/User/SingIn.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/menu_white_24dp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/person_outline_white_24dp.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/LikedCats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LikedCats.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/RandomCats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RandomCats.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Frontend/nizhgoreact" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -108,6 +116,7 @@
       <workItem from="1647727507550" duration="8357000" />
       <workItem from="1647773247014" duration="3533000" />
       <workItem from="1647785514446" duration="19883000" />
+      <workItem from="1647879996296" duration="13967000" />
     </task>
     <servers />
   </component>

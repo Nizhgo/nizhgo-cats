@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Header from "./Components/Header";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import LikedCats from "./Components/LikedCats";
+import SingIn from "./Components/User/SingIn";
 function App() {
   return (
       <BrowserRouter>
@@ -13,6 +14,7 @@ function App() {
               <Routes>
                   <Route path="/nizhgo-cats/" element={<RandomCats/>} />
                   <Route path="nizhgo-cats/liked-cats" element ={<LikedCats/>} />
+                  <Route path="nizhgo-cats/login" element ={<SingIn/>} />
               </Routes>
           </PageRoot>
       </BrowserRouter>

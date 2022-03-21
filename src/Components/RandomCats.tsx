@@ -72,7 +72,7 @@ const ImgContainer = styled.div`
   object-fit: scale-down;
   @media(max-width: 512px)
   {
-    height: 45vh;
+    height: 50vh;
   }
 `;
 

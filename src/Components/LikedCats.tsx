@@ -20,13 +20,16 @@ const LikedCats = () =>
             {
                 LikedCatList.push(cats[id]);
             }
-            setLikedCats(LikedCatList);
+            const reversedList = LikedCatList.reverse();
+            setLikedCats(reversedList);
             console.log(likedCats);
         })
     }, [])
     return(
         <BodyContainer>
+
             <h1>Liked cats</h1>
+            <p>Сats liked by visitors of NizhgoCats</p>
             <div style={{height:'20px'}}/>
             {likedCats.map((liked_cat_data) => {
                 return (<ImgContainer>
@@ -49,7 +52,7 @@ const ImgContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 40vw;
-  object-fit: scale-down;
+  object-fit: contain;
   margin-top: 30px;
   margin-bottom: 30px;
 
