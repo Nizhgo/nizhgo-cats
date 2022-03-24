@@ -4,6 +4,7 @@ import LogoImg from "../Images/NizhgoCatsLogo.svg"
 import {Link, NavLink} from "react-router-dom";
 import MenuIcon from "../Images/menu_white_24dp.svg"
 import LoginIcon from  "../Images/person_outline_white_24dp.svg";
+import CloseIcon from "../Images/close_white_24dp.svg"
 const Header = () =>
 {
     return(
@@ -30,47 +31,60 @@ const Header = () =>
     </HeaderContainer>
     );
 }
-
-const MeunuItems = () =>
+interface Props {
+    setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const MeunuItems = (props?: Props) =>
 {
+    const setIsOpen = props?.setIsOpen;
     return(
         <>
             <Link to={'/nizhgo-cats/'}>
-                <MenuItem>
+                <MenuItem onClick={() => setIsOpen ? setIsOpen(false) : ''}>
                     <NavOption>Random cats!</NavOption>
                 </MenuItem>
             </Link>
             <Link to={'/nizhgo-cats/liked-cats/'}>
-                <MenuItem>
+                <MenuItem onClick={() => setIsOpen ? setIsOpen(false) : () => (console.log('click'))}>
                     <NavOption>Liked cats!</NavOption>
                 </MenuItem>
             </Link>
         </>
-
-    )
+        )
 }
 
 const HamburgerMenu = () =>
 {
     const [isOpen, setIsOpen] = useState(false)
     return(
-        <>
-            <HamburgerMenuWrapper>
-                <img src={MenuIcon} onClick={() => setIsOpen(isOpen => !isOpen)}/>
-                {isOpen &&
-                    <MeunuItems/>
-                }
-            </HamburgerMenuWrapper>
-        </>
+        <HamburgerMenuWrapper>
+            <img src={MenuIcon} onClick={() => setIsOpen(isOpen => !isOpen)}/>
+            {isOpen && <HamburgerMenuContent>
+                <img src={CloseIcon} onClick={() => setIsOpen(isOpen => !isOpen)}/>
+                <div style={{height:'30px'}}/>
+                <MeunuItems setIsOpen={setIsOpen}/>
+            </HamburgerMenuContent>}
+        </HamburgerMenuWrapper>
     );
 }
 
-const HamburgerMenuWrapper = styled.div`
-
-  @media(min-width: 645px){
-    display: none;
-  }
+const HamburgerMenuContent = styled.div`
+  padding-left: 20px;
+  padding-top: 21px;
+    position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
 `
+
+const HamburgerMenuWrapper = styled.div`
+  display: none;
+  @media(max-width:645px)
+  {
+    display: block;
+  }`
 
 const LogoContainer = styled.div`
   height: 36px;
@@ -78,7 +92,7 @@ const LogoContainer = styled.div`
   position: initial;
   display: flex;
   
-  @media(max-width:613px)
+  @media(max-width:645px)
   {
     position: relative;
     text-align: center;
@@ -94,7 +108,7 @@ const NavBar = styled.div`
   width: 100%;
 
   
-@media(max-width: 613px) {
+@media(max-width: 645px) {
   position: absolute;
   width: calc(100% - 40px);
   margin-inline: 20px;
@@ -117,8 +131,10 @@ const HeaderContainer = styled.div`
   justify-content: flex-start;
   flex-direction: row-reverse;
   flex-wrap: nowrap;
+  margin-inline: 15px;
   @media(max-width: 645px){
     display: block;
+    margin-inline: 0;
   }
 `
 
@@ -140,12 +156,19 @@ const Menu = styled.menu`
     white-space: nowrap;
   @media(max-width: 645px){
     flex-direction: column;
+    background-color: black;
   }
     `;
 
 const MenuItem = styled.li`
   margin-left: 35px;
   color: #f6f6f6;
+  
+  @media(max-width: 645px){
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 20px;
+  }
 `
 
 const NavOption = styled.li`

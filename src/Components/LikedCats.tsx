@@ -52,6 +52,7 @@ const ImgContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 40vw;
+  margin-inline: auto;
   object-fit: contain;
   margin-top: 30px;
   margin-bottom: 30px;
