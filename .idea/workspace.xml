@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60ca4b8e-d247-4a4d-8afd-f893534f6a43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Images/close_white_24dp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/UI/Card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/User/LoginUi/LoginScreenUI.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/SignInBackground.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/SignInSticker.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/SignUp.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/LikedCats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/LikedCats.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/UI/BodyContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/BodyContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/User/SingIn.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +61,7 @@
       <recent name="D:\Frontend\nizhgocats\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\nizhgo-cats\src\Components\User" />
       <recent name="D:\Git\nizhgo-cats\src\Components\UI" />
     </key>
   </component>
@@ -116,7 +124,8 @@
       <workItem from="1647942688484" duration="994000" />
       <workItem from="1647971918767" duration="6301000" />
       <workItem from="1648106062142" duration="778000" />
-      <workItem from="1648121553221" duration="3032000" />
+      <workItem from="1648121553221" duration="3800000" />
+      <workItem from="1648141413031" duration="10983000" />
     </task>
     <servers />
   </component>

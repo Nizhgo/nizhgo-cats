@@ -16,7 +16,7 @@ const Header = () =>
                     <MeunuItems/>
                 </Menu>
             </NavScrollContainer>
-            <Link to={'/nizhgo-cats/login/'}>
+            <Link to={'/nizhgo-cats/signup/'}>
                 <LoginContainer>
                     <NavOption>Login</NavOption>
                     <img src={LoginIcon}/>

@@ -7,7 +7,6 @@ const BodyContainer = styled.div`
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  color: white;
   letter-spacing: 1px;
   flex-shrink: 0;
 `;

@@ -6,7 +6,7 @@ const Button  = styled.button`{
   font-weight: 400;
   font-size: 16px;
   padding: 5px;
-  border: 1px solid ${props => props.color};
+  border: 2px solid ${props => props.color};
   border-radius: 5px;
   cursor: pointer;
   background-color: Transparent;
