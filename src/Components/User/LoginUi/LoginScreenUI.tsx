@@ -5,10 +5,22 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-inline: 40px;
+  justify-items: center;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-bottom: 40px;
   
-  @media (max-width: 410px) {
+  @media (max-width: 380px) {
+    width: 270px;
+  }
+
+  @media (max-width: 350px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+  }
+  @media (max-width: 320px) {
     width: auto;
   }
   
@@ -20,6 +32,7 @@ const InputContainer = styled.div`
   text-align: start;
   display: flex;
   flex-direction: column;
+  justify-items: center;
   
     p{
       font-weight: 400;

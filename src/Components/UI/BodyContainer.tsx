@@ -8,7 +8,6 @@ const BodyContainer = styled.div`
   text-align: center;
   justify-content: center;
   letter-spacing: 1px;
-  flex-shrink: 0;
 `;
 
 export default BodyContainer;

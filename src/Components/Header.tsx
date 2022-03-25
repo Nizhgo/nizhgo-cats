@@ -16,9 +16,9 @@ const Header = () =>
                     <MeunuItems/>
                 </Menu>
             </NavScrollContainer>
-            <Link to={'/nizhgo-cats/signup/'}>
+            <Link to={'/nizhgo-cats/signin/'}>
                 <LoginContainer>
-                    <NavOption>Login</NavOption>
+                    <NavOption style={{marginRight:'10px'}}>SignIn</NavOption>
                     <img src={LoginIcon}/>
                 </LoginContainer>
             </Link>
@@ -72,7 +72,7 @@ const HamburgerMenuContent = styled.div`
   padding-left: 20px;
   padding-top: 21px;
     position: fixed;
-  height: 100%;
+  height: 100vh;     
   width: 100%;
   left: 0;
   top: 0;
@@ -160,7 +160,7 @@ const Menu = styled.menu`
   }
     `;
 
-const MenuItem = styled.li`
+const MenuItem = styled.div`
   margin-left: 35px;
   color: #f6f6f6;
   

@@ -78,7 +78,7 @@ const ImgContainer = styled.div`
 
 const ButtonRow = styled.div`
   display: flex;
-  width: 172px;
+  width: 177px;
   justify-content: space-between;
   margin-bottom: 24px;
 `;

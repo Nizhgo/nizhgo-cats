@@ -32,7 +32,7 @@ const LikedCats = () =>
             <p>Сats liked by visitors of NizhgoCats</p>
             <div style={{height:'20px'}}/>
             {likedCats.map((liked_cat_data) => {
-                return (<ImgContainer>
+                return (<ImgContainer key={liked_cat_data.url}>
                     <Img src={liked_cat_data.url}/>
                     <p>{Intl.DateTimeFormat('ru', { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' }).format(liked_cat_data.date)}</p>
                 </ImgContainer>)
