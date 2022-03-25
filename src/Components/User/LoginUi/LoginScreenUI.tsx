@@ -41,5 +41,12 @@ const InputContainer = styled.div`
       margin-left: 15px;
     }
   `
+const ErrorMsg = styled.div`
+  margin-top: 20px;
+  font-size: 12px;
+  color: black;
+  border: 2px solid #C74040;
+  box-sizing: border-box;
+  border-radius: 4px;`
 
-export {CardContainer, InputContainer};
+export {CardContainer, InputContainer, ErrorMsg};

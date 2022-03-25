@@ -1,6 +1,7 @@
-import firebase from 'firebase/compat/app';
+import firebase from 'firebase/compat/app'
 import  'firebase/compat/analytics'
 import 'firebase/compat/database'
+import 'firebase/compat/auth'
 
 const firebaseConfig = {
     apiKey: "AIzaSyAcgtV4EKYwkh79vpAdhM1EfsHiuKHG3ic",
@@ -17,3 +18,4 @@ firebase.initializeApp(firebaseConfig);
 
 export const firebaseAnalytics = firebase.analytics();
 export const firebaseDatabase = firebase.database();
+export const firebaseAuth = firebase.auth();
