@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60ca4b8e-d247-4a4d-8afd-f893534f6a43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Auth.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/User/Profile.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/User/LoginUi/LoginScreenUI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/LoginUi/LoginScreenUI.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/firebaseConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/firebaseConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/User/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/Profile.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -125,7 +119,11 @@
       <workItem from="1648141413031" duration="11909000" />
       <workItem from="1648199864711" duration="6466000" />
       <workItem from="1648215640169" duration="9816000" />
-      <workItem from="1648236577150" duration="6698000" />
+      <workItem from="1648236577150" duration="7664000" />
+      <workItem from="1648300200993" duration="691000" />
+      <workItem from="1648307965559" duration="17000" />
+      <workItem from="1648312421685" duration="4042000" />
+      <workItem from="1648381623029" duration="914000" />
     </task>
     <servers />
   </component>

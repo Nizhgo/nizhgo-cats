@@ -4,11 +4,11 @@ import {AuthContext} from "../Auth";
 import Button from "../UI/Button";
 import {firebaseAuth} from "../../utils/firebaseConfig";
 import {Navigate} from "react-router-dom";
-import {ErrorMsg} from "./LoginUi/LoginScreenUI";
+import {CardContainer} from "./LoginUi/LoginScreenUI";
+import Card from "../UI/Card";
 
 const Profile = () =>
 {
-    const [errorText, setErrorText] = useState<string>();
     const {currentUser} = useContext(AuthContext)
     if (!currentUser)
     {
@@ -19,15 +19,18 @@ const Profile = () =>
     return(
             <BodyContainer>
                 <h2>Profile page</h2>
-                <p>
-                    Work in progress
-                </p>
-                <div style={{height:'50px'}}/>
-                <h4>Your email: {currentUser.email}</h4>
-                <div style={{height:'20px'}}/>
-                <Button onClick={() => firebaseAuth.signOut()} style={{background:'#F2E362'}}>
-                    SignOut
-                </Button>
+                <p>work in progress</p>
+                <Card style={{marginTop: '20px'}}>
+                    <CardContainer>
+                        <div style={{height:'30px'}}/>
+                        <p style={{textAlign:"left", fontWeight:'bold', fontSize:'18px'}}>{currentUser.email}</p>
+                        <p style={{textAlign:"left", fontWeight:'bold', fontSize:'10px', color:'#8D8D8D'}}>{currentUser.uid}</p>
+                        <div style={{height:'100px'}}/>
+                        <Button onClick={() => firebaseAuth.signOut()} style={{background:'#F2E362', color:'black'}}>
+                            SignOut
+                        </Button>
+                    </CardContainer>
+                </Card>
                 </BodyContainer>
     )
 }
