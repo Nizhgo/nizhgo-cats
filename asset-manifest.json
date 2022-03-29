@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/nizhgo-cats/static/css/main.ce193f4e.css",
-    "main.js": "/nizhgo-cats/static/js/main.26b1ff3c.js",
+    "main.css": "/nizhgo-cats/static/css/main.5cadf877.css",
+    "main.js": "/nizhgo-cats/static/js/main.d49fad0e.js",
     "static/js/787.0d8361e4.chunk.js": "/nizhgo-cats/static/js/787.0d8361e4.chunk.js",
     "static/media/Loader.gif": "/nizhgo-cats/static/media/Loader.0d37d30cdd4379a789eb.gif",
     "static/media/SignUp.gif": "/nizhgo-cats/static/media/SignUp.f23154d6ac0610588eb4.gif",
     "static/media/SignInSticker.gif": "/nizhgo-cats/static/media/SignInSticker.600ba380fc9e8db56e02.gif",
+    "static/media/white-cat.png": "/nizhgo-cats/static/media/white-cat.e5e56a15a42aad543581.png",
+    "static/media/liked-cts.png": "/nizhgo-cats/static/media/liked-cts.8ef4a5326b5acb62eb05.png",
     "static/media/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.png": "/nizhgo-cats/static/media/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.2ff254013ba83667659f.png",
     "static/media/NizhgoCatsLogo.svg": "/nizhgo-cats/static/media/NizhgoCatsLogo.6b4f084de8e161fa55677487761f0dfa.svg",
     "index.html": "/nizhgo-cats/index.html",
     "static/media/person_outline_white_24dp.svg": "/nizhgo-cats/static/media/person_outline_white_24dp.6bc6659a627a7cf9c2ddbc5cf6352964.svg",
     "static/media/close_white_24dp.svg": "/nizhgo-cats/static/media/close_white_24dp.604f17ae9e7f7ab96de76a3408313180.svg",
     "static/media/menu_white_24dp.svg": "/nizhgo-cats/static/media/menu_white_24dp.f8235882574e17fb850f4c89f02d8fe3.svg",
-    "main.ce193f4e.css.map": "/nizhgo-cats/static/css/main.ce193f4e.css.map",
-    "main.26b1ff3c.js.map": "/nizhgo-cats/static/js/main.26b1ff3c.js.map",
+    "main.5cadf877.css.map": "/nizhgo-cats/static/css/main.5cadf877.css.map",
+    "main.d49fad0e.js.map": "/nizhgo-cats/static/js/main.d49fad0e.js.map",
     "787.0d8361e4.chunk.js.map": "/nizhgo-cats/static/js/787.0d8361e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce193f4e.css",
-    "static/js/main.26b1ff3c.js"
+    "static/css/main.5cadf877.css",
+    "static/js/main.d49fad0e.js"
   ]
 }
