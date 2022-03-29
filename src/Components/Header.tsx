@@ -55,9 +55,9 @@ const MeunuItems = (props?: Props) =>
                     <NavOption>Random cats!</NavOption>
                 </MenuItem>
             </Link>
-            <Link to={'/nizhgo-cats/liked-cats/'}>
+            <Link to={'/nizhgo-cats/feed/'}>
                 <MenuItem onClick={() => setIsOpen ? setIsOpen(false) : ''}>
-                    <NavOption>Liked cats!</NavOption>
+                    <NavOption>Cats feed</NavOption>
                 </MenuItem>
             </Link>
         </>

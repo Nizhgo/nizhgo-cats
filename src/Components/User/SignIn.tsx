@@ -7,27 +7,34 @@ import Card from "../UI/Card";
 import {CardContainer, ErrorMsg, InputContainer} from "./LoginUi/LoginScreenUI";
 import UnderlinedTextLink from "../UI/UnderlinedText";
 import {Link} from "react-router-dom";
-import {firebaseAuth} from "../../utils/firebaseConfig";
+import {firebaseAuth, firebaseDatabase} from "../../utils/firebaseConfig";
 import {AuthContext} from "../Auth";
 import {Navigate} from "react-router-dom";
+import {useForm} from "react-hook-form";
+interface signInForm{
+    email: string,
+    password: string,
+}
 
 const SignIn = () =>
 {
+    const {register, handleSubmit} = useForm<signInForm>();
     const [errorText, setErrorText] = useState<string>();
-    const handleSignIn = useCallback(async event => {
-        event.preventDefault();
-        const {email, password} = event.target.elements;
-        try{
+    const {currentUser} = useContext(AuthContext);
+
+    const onSubmit = handleSubmit(async (formData) => {
+        try {
             await firebaseAuth
-                .signInWithEmailAndPassword(email.value, password.value)
-        }
-        catch(error: any) {
+                .signInWithEmailAndPassword(formData.email, formData.password).then(
+                    (key) => {
+                        firebaseDatabase.ref(`users/${key.user?.uid}/authorization_time`).push(Date.now());
+                    }
+                )
+        } catch (error: any) {
             const errorText = error.toString();
             setErrorText(errorText)
         }
-    }, [])
-
-    const {currentUser} = useContext(AuthContext)
+    })
 
     if (currentUser)
     {
@@ -38,18 +45,18 @@ const SignIn = () =>
     return(
         <BodyContainer>
             <Card>
-                <form onSubmit={handleSignIn}>
+                <form onSubmit={onSubmit}>
                 <CardContainer>
                         <h3 style={{paddingTop:'40px'}}>SignIn</h3>
                         <img src={SingInSticker} style={{height:'99px', width:'99px', marginInline:'auto', paddingTop:'20px'}}/>
                     {errorText ? <ErrorMsg>{errorText}</ErrorMsg>: ''}
                         <InputContainer>
-                            <p>Email</p>
-                            <Input type='email' name='email' required/>
+                            <p style={{color:'#C9C9C9'}}>Email</p>
+                            <Input type='email' {...register('email')} required/>
                         </InputContainer>
                         <InputContainer>
-                            <p>Password</p>
-                            <Input type='password' name='password' required/>
+                            <p style={{color:'#C9C9C9'}}>Password</p>
+                            <Input type='password' {...register('password')} required/>
                         </InputContainer>
                         <Button type='submit' color='black' style={{backgroundColor:'#F2E362', fontWeight: 'bold', marginTop:'45px'}}>SignIn</Button>
                         <Link to={'/nizhgo-cats/signup'} style={{marginTop:'30px'}}>

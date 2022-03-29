@@ -44,9 +44,10 @@ const InputContainer = styled.div`
 const ErrorMsg = styled.div`
   margin-top: 20px;
   font-size: 12px;
-  color: black;
+  color: #f6f6f6;
   border: 2px solid #C74040;
   box-sizing: border-box;
   border-radius: 4px;`
+
 
 export {CardContainer, InputContainer, ErrorMsg};

@@ -7,51 +7,70 @@ import Button from "../UI/Button";
 import UnderlinedTextLink from "../UI/UnderlinedText";
 import React, {useCallback, useContext, useState} from "react";
 import {Link, Navigate} from "react-router-dom";
-import {firebaseAuth} from "../../utils/firebaseConfig";
+import {firebaseAuth, firebaseDatabase} from "../../utils/firebaseConfig";
 import {AuthContext} from "../Auth";
+import {useForm} from "react-hook-form";
 
-const SingUp = () =>
-{
+interface signUpForm{
+    email: string,
+    nickname: string,
+    password: string
+}
+const SingUp = () => {
+    const {register, handleSubmit} = useForm<signUpForm>();
     const [errorText, setErrorText] = useState<string>();
-    const handleSignUp = useCallback(async event => {
-        event.preventDefault();
-        const {email, password} = event.target.elements;
-            try{
-                await firebaseAuth
-                    .createUserWithEmailAndPassword(email.value, password.value)
-            }
-            catch(error: any) {
-                const errorText = error.toString();
-                setErrorText(errorText)
-            }
-    }, [])
-    const {currentUser} = useContext(AuthContext)
+    const {currentUser} = useContext(AuthContext);
 
-    if (currentUser)
-    {
+    const onSubmit = handleSubmit(async (formData) => {
+        try {
+            await firebaseAuth
+                .createUserWithEmailAndPassword(formData.email, formData.password).then(
+                    (key) => {
+                        firebaseDatabase.ref().child(`users/${key.user?.uid}/email`).set(formData.email);
+                        firebaseDatabase.ref().child(`users/${key.user?.uid}/nickname`).set(formData.nickname);
+                        firebaseDatabase.ref().child(`users/${key.user?.uid}/registration_date`).set(Date.now());
+                        firebaseDatabase.ref().child(`users/${key.user?.uid}/viewed_cats`).set(0);
+                    }
+                )
+        } catch (error: any) {
+            const errorText = error.toString();
+            setErrorText(errorText)
+        }
+    })
+
+    if (currentUser) {
         return (
             <Navigate to={'/nizhgo-cats/profile/'}/>
         )
     }
-    return(
+    return (
         <BodyContainer>
             <Card>
-                <form onSubmit={handleSignUp}>
+                <form onSubmit={onSubmit}>
                     <CardContainer>
-                        <h3 style={{paddingTop:'40px'}}>SignUp</h3>
+                        <h3 style={{paddingTop: '40px'}}>SignUp</h3>
                         <h5>Creating a new account</h5>
-                        <img src={SingUpSticker} style={{height:'99px', width:'99px', marginInline:'auto', paddingTop:'20px'}}/>
-                        {errorText ? <ErrorMsg>{errorText}</ErrorMsg>: ''}
+                        <img src={SingUpSticker}
+                             style={{height: '99px', width: '99px', marginInline: 'auto', paddingTop: '20px'}}/>
+                        {errorText ? <ErrorMsg>{errorText}</ErrorMsg> : ''}
                         <InputContainer>
-                            <p>Email</p>
-                            <Input type='email' name='email' required/>
+                            <p style={{color:'#C9C9C9'}}>Email</p>
+                            <Input type='email' {...register("email")} required/>
                         </InputContainer>
                         <InputContainer>
-                            <p>Password</p>
-                            <Input  type='password' name='password' required/>
+                            <p style={{color:'#C9C9C9'}}>Nickname</p>
+                            <Input type='nickname' {...register("nickname")} required/>
                         </InputContainer>
-                        <Button type='submit' color='black' style={{backgroundColor:'#F2E362', fontWeight: 'bold', marginTop:'45px'}}>SignUp!</Button>
-                        <Link to={'/nizhgo-cats/signin'} style={{marginTop:'30px'}}>
+                        <InputContainer>
+                            <p style={{color:'#C9C9C9'}}>Password</p>
+                            <Input type='password' {...register("password")} required/>
+                        </InputContainer>
+                        <Button type='submit' color='black' style={{
+                            backgroundColor: '#F2E362',
+                            fontWeight: 'bold',
+                            marginTop: '45px'
+                        }}>SignUp!</Button>
+                        <Link to={'/nizhgo-cats/signin'} style={{marginTop: '30px'}}>
                             <UnderlinedTextLink>Do you have an account? SignIn!</UnderlinedTextLink>
                         </Link>
                     </CardContainer>

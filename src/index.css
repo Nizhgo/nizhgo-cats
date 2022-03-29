@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
 
 
 body
 {
-  background-color: #4D5760;
+  background-color: #141727;
   font-family: 'Space Mono', monospace;
   color: #F6F6F6;
   scroll-behavior: smooth;

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 const Card = styled.div`
-    background: rgba(255, 255, 255, 0.95);
+    background-color: #333A40;
+    color:#f6f6f6;
+    margin-top: 20px;
     border-radius: 20px;
-    color: black;
     margin-inline: auto;`
 ;
 

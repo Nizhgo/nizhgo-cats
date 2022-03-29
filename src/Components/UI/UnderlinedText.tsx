@@ -7,6 +7,7 @@ const UnderlinedTextLink = styled.p`
   font-size: 13px;
   text-decoration: underline;
   text-decoration: underline #575CD6 2px;
+  color: #5F68E7;
 
 `;
 

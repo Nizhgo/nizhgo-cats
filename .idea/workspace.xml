@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60ca4b8e-d247-4a4d-8afd-f893534f6a43" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/UI/Img.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/liked-cts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/white-cat.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Auth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/LikedCats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CatsFeed.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/RandomCats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RandomCats.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/UnderlinedText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/UnderlinedText.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/User/LoginUi/LoginScreenUI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/LoginUi/LoginScreenUI.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/User/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/SignInBackground.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,12 +32,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="JavaScript File" />
         <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -123,7 +149,12 @@
       <workItem from="1648300200993" duration="691000" />
       <workItem from="1648307965559" duration="17000" />
       <workItem from="1648312421685" duration="4042000" />
-      <workItem from="1648381623029" duration="914000" />
+      <workItem from="1648381623029" duration="5010000" />
+      <workItem from="1648396100117" duration="1172000" />
+      <workItem from="1648471495302" duration="6857000" />
+      <workItem from="1648493868300" duration="1232000" />
+      <workItem from="1648546611049" duration="2099000" />
+      <workItem from="1648562207957" duration="19903000" />
     </task>
     <servers />
   </component>
