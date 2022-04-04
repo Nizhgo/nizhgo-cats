@@ -7,7 +7,6 @@ const BodyContainer = styled.div`
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  letter-spacing: 1px;
 `;
 
 export default BodyContainer;

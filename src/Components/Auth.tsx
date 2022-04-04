@@ -6,6 +6,7 @@ export const AuthContext = createContext<any | null>(null);
 export const AuthProvider = ({children}: any) =>
 {
     const [currentUser, setCurrentUser] = useState<any>(null);
+    const [userpic, setUserpic] = useState<string>();
     const [viewedCatsCount, setViewedCatsCount] = useState<number | null>();
     const [userNickname, setUserNickname] = useState();
     const [likedCatsCount, setLikedCatsCount] = useState<number | null>();
@@ -45,15 +46,20 @@ export const AuthProvider = ({children}: any) =>
 
     useEffect(() => {
         if (currentUser)
+        {
+            firebaseDatabase.ref(`users/${currentUser.uid}/userpic`).on('value', snapshot => {
+                setUserpic(snapshot.val())
+            });
             firebaseDatabase.ref(`users/${currentUser.uid}/nickname`).get()
                 .then(snapshot => {
                     setUserNickname(snapshot.val());
                 });
+        }
     })
 
     return(
         <AuthContext.Provider
-        value={{currentUser, setCurrentUser, viewedCatsCount, setViewedCatsCount, userNickname, likedCatsCount}}
+        value={{currentUser, setCurrentUser, viewedCatsCount, setViewedCatsCount, userNickname, likedCatsCount, userpic}}
         >
             {children}
         </AuthContext.Provider>

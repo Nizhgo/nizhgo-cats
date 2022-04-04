@@ -2,25 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60ca4b8e-d247-4a4d-8afd-f893534f6a43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/UI/Img.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/liked-cts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/white-cat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/UI/Post.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/favorite_border_white_24dp(1).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/favorite_white_24dp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/like.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Auth.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/LikedCats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CatsFeed.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CatsFeed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CatsFeed.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/RandomCats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RandomCats.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/UnderlinedText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/UnderlinedText.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/User/LoginUi/LoginScreenUI.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/LoginUi/LoginScreenUI.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/BodyContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/BodyContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/Img.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Img.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/User/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/Profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/SignInBackground.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,9 +25,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -154,7 +148,16 @@
       <workItem from="1648471495302" duration="6857000" />
       <workItem from="1648493868300" duration="1232000" />
       <workItem from="1648546611049" duration="2099000" />
-      <workItem from="1648562207957" duration="19903000" />
+      <workItem from="1648562207957" duration="20204000" />
+      <workItem from="1648633781381" duration="1762000" />
+      <workItem from="1648738053782" duration="22000" />
+      <workItem from="1648905093065" duration="595000" />
+      <workItem from="1648915265010" duration="2134000" />
+      <workItem from="1648926137652" duration="3128000" />
+      <workItem from="1648929315032" duration="4526000" />
+      <workItem from="1648985847110" duration="3098000" />
+      <workItem from="1649071518022" duration="774000" />
+      <workItem from="1649087044450" duration="16442000" />
     </task>
     <servers />
   </component>

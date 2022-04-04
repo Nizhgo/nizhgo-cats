@@ -10,10 +10,11 @@ import Card from "../UI/Card";
 import styled from "styled-components";
 import LkdCats from  "../../Images/liked-cts.png"
 import Cats from '../../Images/white-cat.png'
+import Img from "../UI/Img";
 
 const Profile = () =>
 {
-    const {currentUser, viewedCatsCount, userNickname, likedCatsCount} = useContext(AuthContext);
+    const {currentUser, viewedCatsCount, userNickname, likedCatsCount, userpic} = useContext(AuthContext);
     if (!currentUser) {
         return (
             <Navigate to={'/nizhgo-cats/'}/>
@@ -26,9 +27,19 @@ const Profile = () =>
                 <Card>
                     <CardContainer>
                         <div style={{height:'30px'}}/>
-                        <ProfileText style={{fontSize:'18px'}}>{userNickname}</ProfileText>
-                        <ProfileText style={{fontSize:'10px', color:'#8D8D8D'}}>{currentUser.uid}</ProfileText>
-                        <ProfileText style={{fontSize:'12px', marginTop:'10px'}}>email: {currentUser.email}</ProfileText>
+                        <div style={{display:'flex', justifyContent:"start", alignItems:'center'}}>
+                            <Img style={{
+                                width: '56px',
+                                height: '56px',
+                                background: '#F2E362',
+                                borderRadius: '46px',
+                                alignItems: "start"}}
+                            src={userpic}/>
+                            <div style={{paddingLeft:'16px'}}>
+                                <ProfileText style={{fontSize:'18px'}}>{userNickname}</ProfileText>
+                                <ProfileText style={{fontSize:'10px', color:'#8D8D8D'}}>{currentUser.uid}</ProfileText>
+                            </div>
+                        </div>
                         <div style={{height:'70px'}}/>
                         <ProfileText style={{fontSize: '18px', backgroundColor:'#F2E362', color:'black', paddingLeft: '5px', maxWidth:'250px'}}>Your achievements</ProfileText>
                         <div style={{display:'flex', marginTop:'30px'}}>

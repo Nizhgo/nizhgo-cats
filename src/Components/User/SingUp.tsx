@@ -28,6 +28,7 @@ const SingUp = () => {
                     (key) => {
                         firebaseDatabase.ref().child(`users/${key.user?.uid}/email`).set(formData.email);
                         firebaseDatabase.ref().child(`users/${key.user?.uid}/nickname`).set(formData.nickname);
+                        firebaseDatabase.ref().child(`users/${key.user?.uid}/userpic`).set('https://i.ibb.co/mv1X9hK/nizhgo-Cats.png');
                         firebaseDatabase.ref().child(`users/${key.user?.uid}/registration_date`).set(Date.now());
                         firebaseDatabase.ref().child(`users/${key.user?.uid}/viewed_cats`).set(0);
                     }

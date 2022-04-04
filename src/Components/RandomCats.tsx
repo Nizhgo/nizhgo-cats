@@ -8,6 +8,7 @@ import BodyContainer from "./UI/BodyContainer";
 import {AuthContext} from "./Auth";
 import Img from "./UI/Img";
 import {ErrorMsg} from "./User/LoginUi/LoginScreenUI";
+import {IPost} from "./UI/Post";
 
 
 const RandomCats = () =>
@@ -15,11 +16,11 @@ const RandomCats = () =>
     const {currentUser, viewedCatsCount, setViewedCatsCount, userNickname} = useContext(AuthContext);
     const [catImgUrl, setCatImgUrl] = useState('');
 
-    const GetCatImgUrlFromApi = async () => {
+    const GetCatImgUrlFromApi = async (): Promise<void> => {
         firebaseAnalytics.logEvent("viewing_a_cat");
         if (currentUser) {setViewedCatsCount(viewedCatsCount + 1);}
         setCatImgUrl(Loader);
-        await fetch("https://api.thecatapi.com/v1/images/search")
+        await fetch("https://api.thecatapi.com/v1/images/search?limit=1&size=full")
             .then(res => res.json())
             .then(data => setCatImgUrl(data[0].url))
     }
@@ -34,10 +35,12 @@ const RandomCats = () =>
         {
             if (catImgUrl !== Loader)
             {
-                const liked_cat = {
-                    url: catImgUrl,
+                const liked_cat: IPost = {
                     date: Date.now(),
-                    userName: userNickname,
+                    likes: [],
+                    pictureUrl: catImgUrl,
+                    userUid: currentUser.uid
+
                 }
                 firebaseDatabase.ref().child('liked_cats').push(liked_cat);
                 if (currentUser) firebaseDatabase.ref().child(`users/${currentUser.uid}/liked_cats`).push(liked_cat);
