@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/nizhgo-cats/static/css/main.5cadf877.css",
-    "main.js": "/nizhgo-cats/static/js/main.d49fad0e.js",
+    "main.css": "/nizhgo-cats/static/css/main.4b87ddea.css",
+    "main.js": "/nizhgo-cats/static/js/main.284148ec.js",
     "static/js/787.0d8361e4.chunk.js": "/nizhgo-cats/static/js/787.0d8361e4.chunk.js",
-    "static/media/Loader.gif": "/nizhgo-cats/static/media/Loader.0d37d30cdd4379a789eb.gif",
-    "static/media/SignUp.gif": "/nizhgo-cats/static/media/SignUp.f23154d6ac0610588eb4.gif",
-    "static/media/SignInSticker.gif": "/nizhgo-cats/static/media/SignInSticker.600ba380fc9e8db56e02.gif",
-    "static/media/white-cat.png": "/nizhgo-cats/static/media/white-cat.e5e56a15a42aad543581.png",
-    "static/media/liked-cts.png": "/nizhgo-cats/static/media/liked-cts.8ef4a5326b5acb62eb05.png",
+    "static/media/Loader.gif": "/nizhgo-cats/static/media/Loader.b3ca9cca2741b9c4b7c2.gif",
+    "static/media/SignUp.gif": "/nizhgo-cats/static/media/SignUp.4fef001f5b2b0d9b2c48.gif",
+    "static/media/SignInSticker.gif": "/nizhgo-cats/static/media/SignInSticker.65793d57360031563af6.gif",
+    "static/media/white-cat.png": "/nizhgo-cats/static/media/white-cat.e6d1e7abca5196374f35.png",
     "static/media/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.png": "/nizhgo-cats/static/media/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.2ff254013ba83667659f.png",
-    "static/media/NizhgoCatsLogo.svg": "/nizhgo-cats/static/media/NizhgoCatsLogo.6b4f084de8e161fa55677487761f0dfa.svg",
+    "static/media/liked-cts.png": "/nizhgo-cats/static/media/liked-cts.a418323943e80ab30f55.png",
+    "static/media/NizhgoCatsLogo.svg": "/nizhgo-cats/static/media/NizhgoCatsLogo.a69a2b835173acb122740571debd6c8f.svg",
     "index.html": "/nizhgo-cats/index.html",
-    "static/media/person_outline_white_24dp.svg": "/nizhgo-cats/static/media/person_outline_white_24dp.6bc6659a627a7cf9c2ddbc5cf6352964.svg",
-    "static/media/close_white_24dp.svg": "/nizhgo-cats/static/media/close_white_24dp.604f17ae9e7f7ab96de76a3408313180.svg",
-    "static/media/menu_white_24dp.svg": "/nizhgo-cats/static/media/menu_white_24dp.f8235882574e17fb850f4c89f02d8fe3.svg",
-    "main.5cadf877.css.map": "/nizhgo-cats/static/css/main.5cadf877.css.map",
-    "main.d49fad0e.js.map": "/nizhgo-cats/static/js/main.d49fad0e.js.map",
+    "static/media/favorite_border_white_24dp(1).svg": "/nizhgo-cats/static/media/favorite_border_white_24dp(1).92706a5b748d99522e24927f6c6f3448.svg",
+    "static/media/person_outline_white_24dp.svg": "/nizhgo-cats/static/media/person_outline_white_24dp.8d63582431149c3bd00da0e628e61410.svg",
+    "static/media/like.svg": "/nizhgo-cats/static/media/like.6c58dc50f1fe6b0c2ccfec6240184f49.svg",
+    "static/media/close_white_24dp.svg": "/nizhgo-cats/static/media/close_white_24dp.24149075ff07fd03c0c3b1302496c790.svg",
+    "static/media/menu_white_24dp.svg": "/nizhgo-cats/static/media/menu_white_24dp.3a92e4298ed9505029a352334e388bb4.svg",
+    "main.4b87ddea.css.map": "/nizhgo-cats/static/css/main.4b87ddea.css.map",
+    "main.284148ec.js.map": "/nizhgo-cats/static/js/main.284148ec.js.map",
     "787.0d8361e4.chunk.js.map": "/nizhgo-cats/static/js/787.0d8361e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cadf877.css",
-    "static/js/main.d49fad0e.js"
+    "static/css/main.4b87ddea.css",
+    "static/js/main.284148ec.js"
   ]
 }
