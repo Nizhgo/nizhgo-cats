@@ -1,4 +1,9 @@
 # nizhgo-cats
- A simple application for looking at kitties
+ A small and cozy application for viewing kittens!  🐈‍⬛
+ 
+ React + TypeScript + Firebase (authorization and realtime database)
+ Adaptive layout
 
+
+Working version:
 https://nizhgo.github.io/nizhgo-cats/
