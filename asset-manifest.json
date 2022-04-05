@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nizhgo-cats/static/css/main.4b87ddea.css",
-    "main.js": "/nizhgo-cats/static/js/main.284148ec.js",
+    "main.js": "/nizhgo-cats/static/js/main.541ab17a.js",
     "static/js/787.0d8361e4.chunk.js": "/nizhgo-cats/static/js/787.0d8361e4.chunk.js",
     "static/media/Loader.gif": "/nizhgo-cats/static/media/Loader.b3ca9cca2741b9c4b7c2.gif",
     "static/media/SignUp.gif": "/nizhgo-cats/static/media/SignUp.4fef001f5b2b0d9b2c48.gif",
@@ -17,11 +17,11 @@
     "static/media/close_white_24dp.svg": "/nizhgo-cats/static/media/close_white_24dp.24149075ff07fd03c0c3b1302496c790.svg",
     "static/media/menu_white_24dp.svg": "/nizhgo-cats/static/media/menu_white_24dp.3a92e4298ed9505029a352334e388bb4.svg",
     "main.4b87ddea.css.map": "/nizhgo-cats/static/css/main.4b87ddea.css.map",
-    "main.284148ec.js.map": "/nizhgo-cats/static/js/main.284148ec.js.map",
+    "main.541ab17a.js.map": "/nizhgo-cats/static/js/main.541ab17a.js.map",
     "787.0d8361e4.chunk.js.map": "/nizhgo-cats/static/js/787.0d8361e4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b87ddea.css",
-    "static/js/main.284148ec.js"
+    "static/js/main.541ab17a.js"
   ]
 }
