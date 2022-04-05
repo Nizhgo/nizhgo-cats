@@ -14,7 +14,7 @@ import {IPost} from "./UI/Post";
 const RandomCats = () =>
 {
     const {currentUser, viewedCatsCount, setViewedCatsCount, userNickname} = useContext(AuthContext);
-    const [catImgUrl, setCatImgUrl] = useState('');
+    const [catImgUrl, setCatImgUrl] = useState<string>('');
 
     const GetCatImgUrlFromApi = async (): Promise<void> => {
         firebaseAnalytics.logEvent("viewing_a_cat");

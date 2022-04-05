@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
 import RandomCats from "./Components/RandomCats";
 import styled from "styled-components";
@@ -16,11 +16,12 @@ function App() {
               <PageRoot>
                   <Header/>
                   <Routes>
-                      <Route path="/nizhgo-cats/" element={<RandomCats/>} />
+                      <Route path="/nizhgo-cats" element={<RandomCats/>} />
                       <Route path="nizhgo-cats/feed" element ={<CatsFeed/>} />
                       <Route path="nizhgo-cats/signin" element ={<SignIn/>} />
                       <Route path="nizhgo-cats/signup" element ={<SingUp/>} />
-                      <Route path="/nizhgo-cats/profile/" element ={<Profile/>} />
+                      <Route path="/nizhgo-cats/profile" element ={<Profile/>} />
+                      <Route path="*" element ={<Profile/>} />
                   </Routes>
               </PageRoot>
           </BrowserRouter>

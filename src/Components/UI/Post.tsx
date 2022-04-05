@@ -38,13 +38,13 @@ const Post = (props: IPost) => {
         <Card style={{paddingInline: '1.6em', paddingBottom:'1em', fontFamily: 'Space Grotesk'}}>
             <PostHeader>
                 <Img style={{
-                    width: '41px',
-                    height: '41px',
+                    width: '42px',
+                    height: '42px',
                     background: '#F2E362',
                     borderRadius: '31px',
                 }}
                 src={userpic}/>
-                <div style={{marginLeft: '10px', display: "flex", flexDirection: 'column', justifyContent: 'start'}}>
+                <div style={{marginLeft: '15px', display: "flex", flexDirection: 'column', justifyContent: 'start'}}>
                     <p style={{fontSize: '14px', textAlign: 'start'}}>{username}</p>
                     <p style={{
                         fontSize: '10px',
@@ -76,14 +76,15 @@ const Likes = (props: ILikesPost ) =>
             textMsg = 'Liked by you';
             if (likesCount > 1)
             {
-                return (textMsg + ` and ${likesCount - 1} others`);
+               textMsg += ` and ${likesCount - 1} others`;
             }
 
         }
         else
         {
-            return (likesCount.toString() + ' likes');
+            textMsg = likesCount.toString() + ' likes';
         }
+        return textMsg;
     }
     const  likeClick = async () => {
         await firebaseDatabase.ref(`liked_cats/${props.postUid}/likes`).push(currentUser.uid);
@@ -93,7 +94,7 @@ const Likes = (props: ILikesPost ) =>
             snapshot.forEach((like) => {
                     if (like.val() === currentUser.uid) {
                         const key = like.key || "ops";
-                        firebaseDatabase.ref(`liked_cats/${props.postUid}/likes`).child(key).remove().finally();
+                        firebaseDatabase.ref(`liked_cats/${props.postUid}/likes`).child(key).remove();
                     }
                 }
             )
@@ -104,20 +105,18 @@ const Likes = (props: ILikesPost ) =>
         firebaseDatabase.ref(`liked_cats/${props.postUid}/likes`).on('value', snapshot =>
         {
             setLikesCount(snapshot.numChildren());
+            setIsLiked(false);
             snapshot.forEach((like) =>
                 {
                     if (like.val() === currentUser.uid)
                     {
                         setIsLiked(true);
-                    }
-                    else
-                    {
-                        setIsLiked(false);
+                        return;
                     }
                 }
             )
         })
-    }, [])
+    })
     return(
         <div style={{display: 'flex', alignItems:'center', marginInline:'10px'}}>
             <Img style={{
@@ -141,21 +140,26 @@ const ImgContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40vw;
+  width: 600px;
   margin-inline: auto;
   object-fit: scale-down;
   margin-bottom: 15px;
   margin-top: 10px;
-  @media(max-width: 512px)
+  @media(max-width: 645px)
   {
-    width: 100%;
+    width: 86vw;
+  }
+  @media(max-width: 400px)
+  {
+    width: 80vw;
   }
 `;
 
 const PostHeader = styled.div`
-  padding-top: 12px;
-    display: flex;
+  margin-top: 12px;
+  display: flex;
   
 `;
+
 
 export default Post;

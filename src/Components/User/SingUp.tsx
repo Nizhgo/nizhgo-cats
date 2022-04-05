@@ -5,19 +5,19 @@ import SingUpSticker from "../../Images/SignUp.gif";
 import Input from "../UI/Input";
 import Button from "../UI/Button";
 import UnderlinedTextLink from "../UI/UnderlinedText";
-import React, {useCallback, useContext, useState} from "react";
+import React, {useContext, useState} from "react";
 import {Link, Navigate} from "react-router-dom";
 import {firebaseAuth, firebaseDatabase} from "../../utils/firebaseConfig";
 import {AuthContext} from "../Auth";
 import {useForm} from "react-hook-form";
 
-interface signUpForm{
+interface ISignUpForm{
     email: string,
     nickname: string,
     password: string
 }
 const SingUp = () => {
-    const {register, handleSubmit} = useForm<signUpForm>();
+    const {register, handleSubmit} = useForm<ISignUpForm>();
     const [errorText, setErrorText] = useState<string>();
     const {currentUser} = useContext(AuthContext);
 

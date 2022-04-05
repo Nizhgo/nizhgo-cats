@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60ca4b8e-d247-4a4d-8afd-f893534f6a43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/UI/Post.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/favorite_border_white_24dp(1).svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/favorite_white_24dp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Images/like.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Auth.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CatsFeed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CatsFeed.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/RandomCats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RandomCats.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/BodyContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/BodyContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/Img.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Img.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/User/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/AchievementBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/AchievementBlock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/favorite_white_24dp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +154,7 @@
       <workItem from="1648985847110" duration="3098000" />
       <workItem from="1649071518022" duration="774000" />
       <workItem from="1649087044450" duration="16442000" />
+      <workItem from="1649188602067" duration="2302000" />
     </task>
     <servers />
   </component>

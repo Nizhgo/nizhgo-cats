@@ -3,13 +3,13 @@ import img from "./Img";
 import React from "react";
 
 
-interface Iprops {
+interface IAchievementBlock {
     image: string,
     text: string,
     counter: any,
 }
 
-const AchievementBlock = (props: Iprops) => {
+const AchievementBlock = (props: IAchievementBlock) => {
   return(
       <AchievementBlockDiv>
         <img src={props.image} style={{width:'24px', height:'24px'}}/>
