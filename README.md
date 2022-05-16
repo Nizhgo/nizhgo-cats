@@ -4,6 +4,3 @@
  React + TypeScript + Firebase (authorization and realtime database)
  Adaptive layout
 
-
-Working version:
-https://nizhgo.github.io/nizhgo-cats/
