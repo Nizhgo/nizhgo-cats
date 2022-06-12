@@ -11,7 +11,12 @@ export const AuthProvider = ({children}: any) =>
     const [userNickname, setUserNickname] = useState();
     const [likedCatsCount, setLikedCatsCount] = useState<number | null>();
     useEffect(() => {
-        firebaseAuth.onAuthStateChanged((user) => setCurrentUser(user))
+        try{
+            firebaseAuth.onAuthStateChanged((user) => setCurrentUser(user))
+        }
+        catch (er){
+            console.log(er);
+        }
     })
 
     useEffect(() =>
@@ -45,16 +50,16 @@ export const AuthProvider = ({children}: any) =>
     }, [viewedCatsCount])
 
     useEffect(() => {
-        if (currentUser)
-        {
-            firebaseDatabase.ref(`users/${currentUser.uid}/userpic`).on('value', snapshot => {
-                setUserpic(snapshot.val())
-            });
-            firebaseDatabase.ref(`users/${currentUser.uid}/nickname`).get()
-                .then(snapshot => {
-                    setUserNickname(snapshot.val());
+            if (currentUser)
+            {
+                firebaseDatabase.ref(`users/${currentUser.uid}/userpic`).on('value', snapshot => {
+                    setUserpic(snapshot.val())
                 });
-        }
+                firebaseDatabase.ref(`users/${currentUser.uid}/nickname`).get()
+                    .then(snapshot => {
+                        setUserNickname(snapshot.val());
+                    });
+            }
     })
 
     return(

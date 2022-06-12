@@ -1,13 +1,14 @@
 import React, {useContext, useState} from "react";
 import styled from "styled-components";
 import LogoImg from "../Images/NizhgoCatsLogo.svg"
-import {Link, NavLink} from "react-router-dom";
+import {Link, NavLink, useLocation} from "react-router-dom";
 import MenuIcon from "../Images/menu_white_24dp.svg"
 import LoginIcon from  "../Images/person_outline_white_24dp.svg";
 import CloseIcon from "../Images/close_white_24dp.svg"
 import {AuthContext} from "./Auth";
 const Header = () =>
 {
+    const path = useLocation().pathname;
     const {currentUser} = useContext(AuthContext)
     return(
     <HeaderContainer>
@@ -18,7 +19,7 @@ const Header = () =>
                     <MeunuItems/>
                 </Menu>
             </NavScrollContainer>
-            { currentUser ?
+            { currentUser || path === '/'?
                 <Link to={'/nizhgo-cats/profile/'}>
                     <LoginContainer>
                         <NavOption style={{marginRight:'10px'}}>Profile</NavOption>

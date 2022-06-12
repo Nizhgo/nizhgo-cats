@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 import BodyContainer from "./UI/BodyContainer";
 import {firebaseDatabase} from "../utils/firebaseConfig";
 import Post, {IPost} from "./UI/Post";
-import {generateUniqueID} from "web-vitals/dist/modules/lib/generateUniqueID";
 
 
 const CatsFeed = () =>
@@ -10,8 +9,7 @@ const CatsFeed = () =>
     const [likedCats, setLikedCats] = useState<IPost[]>([]);
     useEffect(() =>
     {
-        const LikedCatsFromDb = firebaseDatabase.ref("liked_cats")
-        LikedCatsFromDb.on('value', (snapshot) =>{
+        firebaseDatabase.ref("/liked_cats/").once('value').then((snapshot) =>{
             const cats = snapshot.val();
             const LikedCatList: IPost[] = [];
             for (let id in cats)
@@ -21,7 +19,7 @@ const CatsFeed = () =>
             }
             setLikedCats(LikedCatList.reverse());
         })
-    }, [])
+    })
     return(
         <BodyContainer>
             <h1>Cats feed</h1>

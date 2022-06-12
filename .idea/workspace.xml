@@ -3,15 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="60ca4b8e-d247-4a4d-8afd-f893534f6a43" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/RandomCats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RandomCats.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/AchievementBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/AchievementBlock.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/UI/Post.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/favorite_white_24dp.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Auth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CatsFeed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CatsFeed.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/firebaseConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/firebaseConfig.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +49,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\Git\nizhgo-cats\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -154,7 +153,26 @@
       <workItem from="1648985847110" duration="3098000" />
       <workItem from="1649071518022" duration="774000" />
       <workItem from="1649087044450" duration="16442000" />
-      <workItem from="1649188602067" duration="2302000" />
+      <workItem from="1649188602067" duration="3075000" />
+      <workItem from="1649277580098" duration="18000" />
+      <workItem from="1649277613965" duration="1164000" />
+      <workItem from="1649679999397" duration="158000" />
+      <workItem from="1649704788326" duration="741000" />
+      <workItem from="1649791361904" duration="1740000" />
+      <workItem from="1649846178672" duration="27000" />
+      <workItem from="1650149738951" duration="632000" />
+      <workItem from="1650199156595" duration="1226000" />
+      <workItem from="1650962006376" duration="1954000" />
+      <workItem from="1651228857958" duration="3183000" />
+      <workItem from="1651248206633" duration="54000" />
+      <workItem from="1651249113458" duration="4376000" />
+      <workItem from="1651331598843" duration="2772000" />
+      <workItem from="1651345930118" duration="1695000" />
+      <workItem from="1651521339501" duration="593000" />
+      <workItem from="1651680062469" duration="693000" />
+      <workItem from="1654545559855" duration="4103000" />
+      <workItem from="1655068551539" duration="2907000" />
+      <workItem from="1655071649249" duration="2492000" />
     </task>
     <servers />
   </component>
@@ -171,5 +189,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

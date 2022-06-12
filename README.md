@@ -6,4 +6,4 @@
 
 
 Working version:
-https://nizhgo.github.io/nizhgo-cats/
+https://cats.nizhgorodov.ru
