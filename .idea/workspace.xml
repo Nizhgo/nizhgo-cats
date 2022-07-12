@@ -2,14 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60ca4b8e-d247-4a4d-8afd-f893534f6a43" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/Pages/CatsFeed/CatsFeedLayout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Pages/CatsFeed/Posts.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hooks/useCatApi.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hooks/useFirebaseDB.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Hooks/useLike.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Auth.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CatsFeed.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/CatsFeed.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Contexts/AuthContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/CatsFeed.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/firebaseConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/firebaseConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/RandomCats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RandomCatsPage/RandomCats.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/AchievementBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/AchievementBlock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/BodyContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/BodyContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/Img.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/Img.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/Post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/UI/UnderlinedText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/UnderlinedText.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/User/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/Profile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/Loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/Loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/NizhgoCatsLogo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/NizhgoCatsLogo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/SignInSticker.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/SignInSticker.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/SignUp.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/SignUp.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/close_white_24dp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/close_white_24dp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/favorite_border_white_24dp(1).svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/favorite_border_white_24dp(1).svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/like.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/like.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/liked-cts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/liked-cts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/menu_white_24dp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/menu_white_24dp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/person_outline_white_24dp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/person_outline_white_24dp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Images/white-cat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/white-cat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/firebaseConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Firebase/firebaseConfig.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +96,11 @@
       <recent name="D:\Frontend\nizhgocats\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Git\nizhgo-cats\src\Components\User" />
-      <recent name="D:\Git\nizhgo-cats\src\Components\UI" />
+      <recent name="D:\Git\nizhgo-cats\src\Components\Pages\CatsFeed" />
+      <recent name="D:\Git\nizhgo-cats\src\Components\Pages\CatsFeedLayout" />
+      <recent name="D:\Git\nizhgo-cats\src\Components\RandomCatsPage" />
+      <recent name="D:\Git\nizhgo-cats\src\UiComponents" />
+      <recent name="D:\Git\nizhgo-cats\src\Components\Contexts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -172,7 +204,10 @@
       <workItem from="1651680062469" duration="693000" />
       <workItem from="1654545559855" duration="4103000" />
       <workItem from="1655068551539" duration="2907000" />
-      <workItem from="1655071649249" duration="2492000" />
+      <workItem from="1655071649249" duration="2506000" />
+      <workItem from="1655126884893" duration="632000" />
+      <workItem from="1657575134657" duration="3428000" />
+      <workItem from="1657624268034" duration="7236000" />
     </task>
     <servers />
   </component>

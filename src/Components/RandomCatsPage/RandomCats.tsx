@@ -1,50 +1,39 @@
 import React, {useContext, useEffect, useState} from "react";
 import styled from "styled-components";
-import Button from "./UI/Button";
-import CatBtn from '../Images/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.png';
-import Loader from  '../Images/Loader.gif'
-import {firebaseAnalytics, firebaseDatabase} from "../utils/firebaseConfig";
-import BodyContainer from "./UI/BodyContainer";
-import {AuthContext} from "./Auth";
-import Img from "./UI/Img";
-import {ErrorMsg} from "./User/LoginUi/LoginScreenUI";
-import {IPost} from "./UI/Post";
+import Button from "../../UiComponents/Button";
+import CatBtn from '../../Assets/Images/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.png';
+import {firebaseAnalytics, firebaseDatabase} from "../../Firebase/firebaseConfig";
+import BodyContainer from "../../UiComponents/BodyContainer";
+import {AuthContext} from "../Contexts/AuthContext";
+import Img from "../../UiComponents/Img";
+import {ErrorMsg} from "../User/LoginUi/LoginScreenUI";
+import {IPost} from "../../UiComponents/Post";
+import useCatApi from "../../Hooks/useCatApi";
 
 
 const RandomCats = () =>
 {
-    const {currentUser, viewedCatsCount, setViewedCatsCount, userNickname} = useContext(AuthContext);
-    const [catImgUrl, setCatImgUrl] = useState<string>('');
+    const {currentUser} = useContext(AuthContext);
+    const {catImg, getCatImg, isLoading} = useCatApi();
 
-    const GetCatImgUrlFromApi = async (): Promise<void> => {
-        firebaseAnalytics.logEvent("viewing_a_cat");
-        if (currentUser) {setViewedCatsCount(viewedCatsCount + 1);}
-        setCatImgUrl(Loader);
-        await fetch("https://api.thecatapi.com/v1/images/search?limit=1&size=full")
-            .then(res => res.json())
-            .then(data => setCatImgUrl(data[0].url))
-    }
-        useEffect(() => {
-            GetCatImgUrlFromApi();
-        }, []);
 
     const LikeACat = () =>
     {
         firebaseAnalytics.logEvent("like_cat_button");
         if (currentUser)
         {
-            if (catImgUrl !== Loader)
+            if (!isLoading)
             {
                 const liked_cat: IPost = {
                     date: Date.now(),
                     likes: [],
-                    pictureUrl: catImgUrl,
+                    pictureUrl: catImg,
                     userUid: currentUser.uid
 
                 }
                 firebaseDatabase.ref().child('liked_cats').push(liked_cat);
                 if (currentUser) firebaseDatabase.ref().child(`users/${currentUser.uid}/liked_cats`).push(liked_cat);
-                GetCatImgUrlFromApi();
+                getCatImg();
         }
         }
     }
@@ -52,7 +41,7 @@ const RandomCats = () =>
     const NextCat = () =>
     {
         firebaseAnalytics.logEvent("next_cat_button");
-        GetCatImgUrlFromApi();
+        getCatImg();
     }
 
     return(
@@ -65,7 +54,7 @@ const RandomCats = () =>
                 </ButtonRow>
                 { !currentUser ? <ErrorMsg style={{borderColor:'#4D5760', marginBottom:'20px', color:'#4D5760'}}>Only registered users can like kittens</ErrorMsg>:''}
                 <ImgContainer>
-                    <Img src={catImgUrl}/>
+                    <Img src={catImg}/>
                 </ImgContainer>
             </CatsGenerator>
         </BodyContainer>

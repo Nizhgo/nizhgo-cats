@@ -1,5 +1,5 @@
 import React, {createContext, useEffect, useState} from "react";
-import {firebaseAuth, firebaseDatabase} from "../utils/firebaseConfig";
+import {firebaseAuth, firebaseDatabase} from "../../Firebase/firebaseConfig";
 
 export const AuthContext = createContext<any | null>(null);
 

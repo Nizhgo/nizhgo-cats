@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import RandomCats from "./Components/RandomCats";
+import RandomCats from "./Components/RandomCatsPage/RandomCats";
 import styled from "styled-components";
 import Header from "./Components/Header";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import CatsFeed from "./Components/CatsFeed";
+import CatsFeedLayout from "./Components/Pages/CatsFeed/CatsFeedLayout";
 import SignIn from "./Components/User/SignIn";
 import SingUp from "./Components/User/SingUp";
-import {AuthProvider} from "./Components/Auth";
+import {AuthProvider} from "./Components/Contexts/AuthContext";
 import Profile from "./Components/User/Profile";
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
                   <Header/>
                   <Routes>
                       <Route path="/nizhgo-cats" element={<RandomCats/>} />
-                      <Route path="nizhgo-cats/feed" element ={<CatsFeed/>} />
+                      <Route path="nizhgo-cats/feed" element ={<CatsFeedLayout/>} />
                       <Route path="nizhgo-cats/signin" element ={<SignIn/>} />
                       <Route path="nizhgo-cats/signup" element ={<SingUp/>} />
                       <Route path="/nizhgo-cats/profile" element ={<Profile/>} />

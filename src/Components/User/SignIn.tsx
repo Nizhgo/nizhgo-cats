@@ -1,14 +1,14 @@
 import React, {useContext, useState} from "react";
-import BodyContainer from "../UI/BodyContainer";
-import SingInSticker from "../../Images/SignInSticker.gif"
-import Input from "../UI/Input";
-import Button from "../UI/Button";
-import Card from "../UI/Card";
+import BodyContainer from "../../UiComponents/BodyContainer";
+import SingInSticker from "../../Assets/Images/SignInSticker.gif"
+import Input from "../../UiComponents/Input";
+import Button from "../../UiComponents/Button";
+import Card from "../../UiComponents/Card";
 import {CardContainer, ErrorMsg, InputContainer} from "./LoginUi/LoginScreenUI";
-import UnderlinedTextLink from "../UI/UnderlinedText";
+import UnderlinedTextLink from "../../UiComponents/UnderlinedText";
 import {Link} from "react-router-dom";
-import {firebaseAuth, firebaseDatabase} from "../../utils/firebaseConfig";
-import {AuthContext} from "../Auth";
+import {firebaseAuth, firebaseDatabase} from "../../Firebase/firebaseConfig";
+import {AuthContext} from "../Contexts/AuthContext";
 import {Navigate} from "react-router-dom";
 import {useForm} from "react-hook-form";
 interface signInForm{

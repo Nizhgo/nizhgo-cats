@@ -1,16 +1,16 @@
 import React, {useContext, useState} from "react";
-import BodyContainer from "../UI/BodyContainer";
-import {AuthContext} from "../Auth";
-import Button from "../UI/Button";
-import {firebaseAuth, firebaseDatabase} from "../../utils/firebaseConfig";
+import BodyContainer from "../../UiComponents/BodyContainer";
+import {AuthContext} from "../Contexts/AuthContext";
+import Button from "../../UiComponents/Button";
+import {firebaseAuth, firebaseDatabase} from "../../Firebase/firebaseConfig";
 import {Navigate} from "react-router-dom";
 import {CardContainer} from "./LoginUi/LoginScreenUI";
-import AchievementBlock from "../UI/AchievementBlock";
-import Card from "../UI/Card";
+import AchievementBlock from "../../UiComponents/AchievementBlock";
+import Card from "../../UiComponents/Card";
 import styled from "styled-components";
-import LkdCats from  "../../Images/liked-cts.png"
-import Cats from '../../Images/white-cat.png'
-import Img from "../UI/Img";
+import LkdCats from "../../Assets/Images/liked-cts.png"
+import Cats from '../../Assets/Images/white-cat.png'
+import Img from "../../UiComponents/Img";
 
 const Profile = () =>
 {

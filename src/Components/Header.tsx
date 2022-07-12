@@ -1,25 +1,25 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useState, useMemo} from "react";
 import styled from "styled-components";
-import LogoImg from "../Images/NizhgoCatsLogo.svg"
-import {Link, NavLink, useLocation} from "react-router-dom";
-import MenuIcon from "../Images/menu_white_24dp.svg"
-import LoginIcon from  "../Images/person_outline_white_24dp.svg";
-import CloseIcon from "../Images/close_white_24dp.svg"
-import {AuthContext} from "./Auth";
+import LogoImg from "../Assets/Images/NizhgoCatsLogo.svg"
+import {Link} from "react-router-dom";
+import MenuIcon from "../Assets/Images/menu_white_24dp.svg"
+import LoginIcon from "../Assets/Images/person_outline_white_24dp.svg";
+import CloseIcon from "../Assets/Images/close_white_24dp.svg"
+import {AuthContext} from "./Contexts/AuthContext";
 const Header = () =>
 {
-    const path = useLocation().pathname;
-    const {currentUser} = useContext(AuthContext)
-    return(
+    const {currentUser} = useContext(AuthContext);
+
+    return useMemo(() => (
     <HeaderContainer>
         <NavBar>
             <HamburgerMenu/>
             <NavScrollContainer>
-                <Menu>
-                    <MeunuItems/>
-                </Menu>
+                <MenuWrapper>
+                    <MenuItems/>
+                </MenuWrapper>
             </NavScrollContainer>
-            { currentUser || path === '/'?
+            { currentUser?
                 <Link to={'/nizhgo-cats/profile/'}>
                     <LoginContainer>
                         <NavOption style={{marginRight:'10px'}}>Profile</NavOption>
@@ -41,14 +41,14 @@ const Header = () =>
             </Link>
         </LogoContainer>
     </HeaderContainer>
-    );
+    ), [currentUser]);
 }
 interface Props {
     setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const MeunuItems = (props?: Props) =>
+const MenuItems = (props: Props) =>
 {
-    const setIsOpen = props?.setIsOpen;
+    const {setIsOpen} = props;
     return(
         <>
             <Link to={'/nizhgo-cats/'}>
@@ -68,16 +68,16 @@ const MeunuItems = (props?: Props) =>
 const HamburgerMenu = () =>
 {
     const [isOpen, setIsOpen] = useState(false)
-    return(
+    return useMemo(() => (
         <HamburgerMenuWrapper>
             <img src={MenuIcon} onClick={() => setIsOpen(isOpen => !isOpen)}/>
             {isOpen && <HamburgerMenuContent>
                 <img src={CloseIcon} onClick={() => setIsOpen(isOpen => !isOpen)}/>
                 <div style={{height:'30px'}}/>
-                <MeunuItems setIsOpen={setIsOpen}/>
+                <MenuItems setIsOpen={setIsOpen}/>
             </HamburgerMenuContent>}
         </HamburgerMenuWrapper>
-    );
+    ), [isOpen]);
 }
 
 const HamburgerMenuContent = styled.div`
@@ -162,7 +162,7 @@ const NavScrollContainer = styled.div`
     `;
 
 
-const Menu = styled.menu`
+const MenuWrapper = styled.menu`
     display: flex;
     flex-wrap: nowrap;
     white-space: nowrap;

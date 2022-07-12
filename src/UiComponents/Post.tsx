@@ -4,10 +4,10 @@ import Img from "./Img";
 import Card from "./Card";
 import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en.json'
-import {firebaseDatabase} from "../../utils/firebaseConfig";
-import notliked from '../../Images/favorite_border_white_24dp(1).svg'
-import like from '../../Images/like.svg'
-import {AuthContext} from "../Auth";
+import {firebaseDatabase} from "../Firebase/firebaseConfig";
+import notliked from '../Assets/Images/favorite_border_white_24dp(1).svg'
+import like from '../Assets/Images/like.svg'
+import {AuthContext} from "../Components/Contexts/AuthContext";
 
 TimeAgo.addDefaultLocale(en)
 const timeAgo = new TimeAgo('en-US')
