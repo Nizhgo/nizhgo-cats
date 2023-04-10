@@ -1,20 +1,33 @@
-import React, {useEffect} from "react";
+import { useEffect, useState } from "react";
+import type { FC } from "react";
 import LoadGif from "../Assets/Images/Loader.gif";
 
-export default function useCatApi() {
-    const [catImg, setCatImg] = React.useState<string>('');
-    const [isLoading, setIsLoading] = React.useState<boolean>(false);
+export type CatApiReturnType = {
+    catImg: string;
+    getCatImg: () => Promise<void>;
+    isLoading: boolean;
+};
+
+const useCatApi: () => CatApiReturnType = () => {
+    const [catImg, setCatImg] = useState<string>("");
+    const [isLoading, setIsLoading] = useState<boolean>(false);
 
     const getCatImg = async () => {
-        if (catImg !== LoadGif) {
-            setIsLoading(true);
-            await fetch("https://aws.random.cat/meow")
-                .then(res => res.json())
-                .then(data => setCatImg(data.file))
-                .finally(() => setIsLoading(false));
+        try {
+            if (catImg !== LoadGif) {
+                setIsLoading(true);
+                const res = await fetch("https://api.thecatapi.com/v1/images/search");
+                const data = await res.json();
+                setCatImg(data[0].url);
+            }
+        } catch (err) {
+            console.error(err);
+        } finally {
+            setIsLoading(false);
         }
-    }
-    React.useEffect(() => {
+    };
+
+    useEffect(() => {
         getCatImg();
     }, []);
 
@@ -24,6 +37,7 @@ export default function useCatApi() {
         }
     }, [isLoading]);
 
-    return {catImg, getCatImg, isLoading};
-}
+    return { catImg, getCatImg, isLoading };
+};
 
+export default useCatApi;

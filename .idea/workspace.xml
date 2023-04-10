@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60ca4b8e-d247-4a4d-8afd-f893534f6a43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Pages/CatsFeed/CatsFeedLayout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Pages/CatsFeed/Posts.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Hooks/useCatApi.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Hooks/useFirebaseDB.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Hooks/useLike.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.firebase/hosting.YnVpbGQ.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Contexts/AuthContext.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/CatsFeed.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/RandomCats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RandomCatsPage/RandomCats.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/AchievementBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/AchievementBlock.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/BodyContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/BodyContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/Img.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/Img.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/Input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/Post.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/UI/UnderlinedText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiComponents/UnderlinedText.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/User/Profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/Profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SignIn.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/User/SingUp.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/Loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/Loader.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/NizhgoCatsLogo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/NizhgoCatsLogo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/SignInSticker.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/SignInSticker.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/SignUp.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/SignUp.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/close_white_24dp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/close_white_24dp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/favorite_border_white_24dp(1).svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/favorite_border_white_24dp(1).svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/like.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/like.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/liked-cts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/liked-cts.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/menu_white_24dp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/menu_white_24dp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/person_outline_white_24dp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/person_outline_white_24dp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/smiling-cat-face-with-heart-shaped-eyes-emoji-by-google.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Images/white-cat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/Images/white-cat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/firebaseConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Firebase/firebaseConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hooks/useCatApi.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hooks/useCatApi.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,20 +39,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
-    <property name="nodejs_interpreter_path" value="node" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="D:\Git\nizhgo-cats\node_modules\typescript\lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Dev\\Github\\nizhgo-cats\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Git\nizhgo-cats\src\Images" />
@@ -106,7 +68,6 @@
   <component name="RunManager" selected="npm.npm start">
     <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
@@ -208,6 +169,7 @@
       <workItem from="1655126884893" duration="632000" />
       <workItem from="1657575134657" duration="3428000" />
       <workItem from="1657624268034" duration="7236000" />
+      <workItem from="1681163988401" duration="289000" />
     </task>
     <servers />
   </component>
